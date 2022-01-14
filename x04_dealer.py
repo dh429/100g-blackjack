@@ -39,7 +39,7 @@ def dealer(deck):
     score = value(dealer)
   
   elif score > 16:
-    return[dealer, score, deck]
+    return [dealer, score, deck]
 
 
 def main():
