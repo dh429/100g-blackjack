@@ -10,6 +10,16 @@ def createDeck():
   ranks = ['2','3','4','5','6','7','8','9','T','J','Q','K','A']
   suits = ['C','D','H','S']
   deck = []
+  rankspot = 0
+  suitspot = 0
+  for i in range(52):
+    deck.append(ranks[rankspot] + suits[suitspot])
+    rankspot = rankspot + 1
+    suitspot = suitspot + 1
+    if rankspot == 13:
+      rankspot = 0    
+    if suitspot == 4:
+      suitspot = 0
   
   return deck
   
@@ -27,3 +37,4 @@ def main():
   
 if __name__ == "__main__":
   main()
+  print(createDeck())
