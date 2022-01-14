@@ -31,4 +31,4 @@ def main():
   run1 = dealer(deck)
   assert dealer(deck) == [['3C', '3S', '8S', '3D'], 17, run1[2] ]
   run2 = dealer( run1[2] )
-  assert dealer(run1[2]) == [['AC', '9H'], 20, run2[2] )
+  assert dealer(run1[2]) == [['AC', '9H'], 20, run2[2]]
