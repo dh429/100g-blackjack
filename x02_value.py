@@ -11,7 +11,9 @@ def value(hand):
   may return a list if the hand contains an Ace
   eg:
   '''
-  for i in len(hand):
+  total = 0
+  ace = 0
+  for i in range(len(hand)):
     if "2"  in hand[i]:
       total = total + 2
     elif "3"  in hand[i]:
@@ -41,12 +43,6 @@ def value(hand):
     return acel
   else:
     return total
-
-    
-
-
-
-  return None
 
 
 def main():
